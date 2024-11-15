@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_bottom_nav.xml"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/genderFragment"
+        android:name="com.example.surveykshanassignment.fragments.GenderFragment"
+        android:label="fragment_gender"
+        tools:layout="@layout/fragment_gender" >
+        <action
+            android:id="@+id/action_genderFragment_to_ageFragment"
+            app:destination="@id/ageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ageFragment"
+        android:name="com.example.surveykshanassignment.fragments.AgeFragment"
+        android:label="fragment_age"
+        tools:layout="@layout/fragment_age" >
+        <action
+            android:id="@+id/action_ageFragment_to_selfieFragment"
+            app:destination="@id/selfieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.example.surveykshanassignment.fragments.SummaryFragment"
+        android:label="fragment_summary"
+        tools:layout="@layout/fragment_summary" />
+    <fragment
+        android:id="@+id/selfieFragment"
+        android:name="com.example.surveykshanassignment.fragments.SelfieFragment"
+        android:label="fragment_selfie"
+        tools:layout="@layout/fragment_selfie" >
+        <action
+            android:id="@+id/action_selfieFragment_to_submitFragment"
+            app:destination="@id/submitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/submitFragment"
+        android:name="com.example.surveykshanassignment.fragments.SubmitFragment"
+        android:label="SubmitFragment" >
+        <action
+            android:id="@+id/action_submitFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.surveykshanassignment.fragments.StartFragment"
+        android:label="StartFragment" >
+        <action
+            android:id="@+id/action_startFragment_to_genderFragment"
+            app:destination="@id/genderFragment" />
+    </fragment>
+</navigation>

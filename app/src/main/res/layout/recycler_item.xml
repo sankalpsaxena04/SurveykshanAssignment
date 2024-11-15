@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+   >
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+<LinearLayout
+    android:background="@drawable/box"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+    <ImageView
+        android:id="@+id/ivSelfie"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="8dp"/>
+<View
+    android:layout_width="1dp"
+    android:layout_height="match_parent"
+    android:background="@color/black"/>
+    <TextView
+        android:layout_marginHorizontal="4dp"
+        android:id="@+id/tvGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Gender"
+        android:textSize="14sp"
+        android:padding="4dp" />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/black"/>
+
+    <TextView
+        android:layout_marginHorizontal="4dp"
+        android:id="@+id/tvAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Age"
+        android:textSize="14sp"
+        android:padding="4dp" />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/black"/>
+
+    <TextView
+        android:layout_marginHorizontal="4dp"
+        android:id="@+id/tvTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="Timestamp"
+        android:textSize="14sp"
+        android:padding="4dp" />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/black"/>
+    <ImageButton
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/btnPlayPause"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_play"
+        android:background="@android:color/transparent"
+        android:contentDescription="Play/Pause" />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/black"/>
+</LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

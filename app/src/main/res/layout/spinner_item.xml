@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:padding="12dp"
+    android:textSize="16sp"
+    android:textColor="@color/app_black"
+    android:hint="Select Gender"
+    android:fontFamily="@font/sfbold"
+    android:dropDownSelector="@color/primary"
+    android:id="@+id/dropdown"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginHorizontal="12dp"
+    android:paddingVertical="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
